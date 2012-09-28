@@ -41,4 +41,5 @@ Run in /xmonad and XMonadContrib
     runhaskell Setup.lhs install --user
 
 Then add the following to your ~/.xsession
+
     $HOME/bin/xmonad
