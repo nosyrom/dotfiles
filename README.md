@@ -27,19 +27,18 @@ Work Setup - xmonad and dzen2
 
 Install dependencies:
 
-sudo apt-get install darcs dzen2 xfonts-terminus suckless-tools
+    sudo apt-get install darcs dzen2 xfonts-terminus suckless-tools
 
 Compile latest xmonad for ICCCMFocus support
-darcs get http://code.haskell.org/xmonad
-darcs get http://code.haskell.org/XMonadContrib
+  
+    darcs get http://code.haskell.org/xmonad
+    darcs get http://code.haskell.org/XMonadContrib
 
 Run in /xmonad and XMonadContrib
-runhaskell Setup.lhs configure --user --prefix=$HOME
-runhaskell Setup.lhs build
-runhaskell Setup.lhs install --user
 
-Then add
+    runhaskell Setup.lhs configure --user --prefix=$HOME
+    runhaskell Setup.lhs build
+    runhaskell Setup.lhs install --user
 
-$HOME/bin/xmonad
-
-To ~/.xsession
+Then add the following to your ~/.xsession
+    $HOME/bin/xmonad
